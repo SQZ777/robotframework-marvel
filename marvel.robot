@@ -1,10 +1,12 @@
 *** Settings ***
-Resource    settings.robot
-Suite Setup    Create Session    MARVEL_API    http://gateway.marvel.com
+Variables     config_variables.py
+Library     common.py
+Library    RequestsLibrary
+Suite Setup    Create Session    MARVEL_API    ${${ENV}.MARVEL_URL}
 
 *** Variables ***
-${api_private_key}=    your key
-${api_public_key}=    your key
+${api_private_key}=    ${${ENV}.MARVEL_PRIVATE_KEY}
+${api_public_key}=    ${${ENV}.MARVEL_PUBLIC_KEY}
 
 *** Keywords ***
 Get Character With Beginning Of The Name
