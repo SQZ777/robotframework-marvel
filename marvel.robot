@@ -1,7 +1,5 @@
 *** Settings ***
-Variables     config_variables.py
-Library     common.py
-Library    RequestsLibrary
+Resource    settings.robot
 Suite Setup    Create Session    MARVEL_API    ${${ENV}.MARVEL_URL}
 
 *** Variables ***
