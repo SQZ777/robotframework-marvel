@@ -19,7 +19,7 @@ python -m robot --variable ENV:BLOG_ENV marvel.robot
 ```
 
 ## How to add Marvel token
-Step 1. go to https://developer.marvel.com/
-Step 2. register a account and go to https://developer.marvel.com/account
-Step 3. you will get your public key and private key
-Step 4. replace the key in config.ini
+- Step 1. go to https://developer.marvel.com/
+- Step 2. register a account and go to https://developer.marvel.com/account
+- Step 3. you will get your public key and private key
+- Step 4. replace the key in config.ini
